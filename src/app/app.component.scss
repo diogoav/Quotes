@@ -1,0 +1,48 @@
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* https://source.unsplash.com/random/1920x1080 */
+    background-image: url('../assets/faseeh-fawaz-R5HAP_Zi_VE-unsplash.jpg'); 
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    
+}
+
+.top-section{
+   // background-color: cadetblue;
+    text-align: center;
+    
+    padding: 70px 0;
+    
+    h1{
+        font-size: 120px;
+        font-weight: bold;
+        color: #f5f5f5;
+        text-shadow: 0px 1px 4px rgba($color: black, $alpha: 3.0);
+    }
+    h2{
+        font-size: 28px;
+        text-shadow: 0px 1px 4px rgba($color: black, $alpha: 1.0);
+        color: white;
+    }
+    
+}
+
+.content-section{
+    // background-color: rgb(20, 236, 164);
+    flex-grow: 1;
+    min-height: 0;
+}
+
+.bottom-section{
+   // background-color: coral;
+    display: flex;
+
+    app-tabs {
+        margin: auto;
+    }
+}
+

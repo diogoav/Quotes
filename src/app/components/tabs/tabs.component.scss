@@ -1,0 +1,46 @@
+.tabs {
+  display: flex;
+  padding: 10px;
+  background-color: rgba($color: white, $alpha: 0.5);
+  backdrop-filter: blur(3px);
+  border-radius: 50%;
+  margin: 17px;
+}
+
+.tab-btn {
+  display: flex;
+  padding: 12px;
+
+  cursor: pointer;
+
+  i {
+    color: #222;
+    z-index: 1;
+    transform: scale(1.2);
+  }
+}
+.tab {
+  position: relative;
+}
+
+.tab-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.quoteTab .tab-btn::before {
+  background: linear-gradient(45deg, #f7e926, #94f7a5);
+}
+
+.tab-btn:hover::before {
+  transform: scale(1.2);
+  opacity: 1;
+}
