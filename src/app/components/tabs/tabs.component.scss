@@ -37,7 +37,8 @@
 }
 
 .quoteTab .tab-btn::before {
-  background: linear-gradient(45deg, #f7e926, #94f7a5);
+  //background: linear-gradient(45deg, #f7e926, #94f7a5);
+  background: linear-gradient(98deg, rgba(247,248,173,0.8), rgba(212,150,220,0.7));;
 }
 
 .tab-btn:hover::before {

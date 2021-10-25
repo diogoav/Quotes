@@ -1,40 +1,39 @@
-.quote-tile{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background-color: rgba($color: black, $alpha: 0.55);
-    gap: 12px;
-    width: 110px;
-    height: 110px;
-    padding: 12px;
-    border-radius: 50%;
-    
+.quote-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: rgba($color: black, $alpha: 0.9);
+  gap: 12px;
+  width: 110px;
+  height: 110px;
+  padding: 12px;
+  border-radius: 50%;
 
-    transition: all 0.4s;
+  transition: all 0.4s;
 
-    &:hover{
-        background: rgba($color: black, $alpha: 0.7);
-        border: 6px solid rgba($color: white, $alpha: 0.7);
-    }
-    &:active  { // click effect
-        background: rgba($color: black, $alpha: 0.9);
-        transform: translateY(2px);
-    }
+  &:hover {
+    background: rgba($color: black, $alpha: 0.7);
+    border: 6px solid rgba($color: white, $alpha: 0.7);
+  }
+  &:active {
+    // click effect
+    background: rgba($color: black, $alpha: 0.9);
+    transform: translateY(2px);
+  }
 }
 
 .text-card {
-    font-size: 14px ;
-    color: rgba($color: white, $alpha: 1.0);
-    max-width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    
+  font-size: 14px;
+  color: rgba($color: white, $alpha: 1);
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-i{
-    color: white;
-    transform: scale(1.5); 
+i {
+  color: white;
+  transform: scale(1.5);
 }

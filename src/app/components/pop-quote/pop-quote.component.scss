@@ -1,0 +1,60 @@
+.quote-wrapper {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.container {
+    display: flex;
+  
+    justify-content: center;
+    
+
+    
+}
+
+
+span{
+    
+    
+    color: white;
+    background-color: white;
+    opacity: 0.5;
+    
+}
+.container {
+    max-width: 850px;
+    margin: auto; 
+    
+}
+
+span{
+    margin: 0;
+    
+}
+
+.quote-message{
+    background-color: black;
+   
+    opacity: 0.6;
+    color: white;
+    padding: 25px;
+    white-space: normal;
+    text-align: center;
+    &:hover{
+        opacity: 1;
+    }
+    
+}
+
+.message-title{
+    font-weight: 700;
+    
+    
+}
+.message-content{
+    max-width: 300px;
+    word-break: break-word;
+    border: 1 px solid red;
+}
+
+
