@@ -9,9 +9,10 @@ import { QuoteCardComponent } from './components/quote-card/quote-card.component
 import { PopQuoteComponent } from './components/pop-quote/pop-quote.component';
 import { RouterModule } from '@angular/router';
 import { SearchComponent } from './components/search/search.component';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { NgxPaginationModule } from 'ngx-pagination';
-import { OrderModule } from 'ngx-order-pipe';
+import { FormsModule } from '@angular/forms';
+import { SearchResultComponent } from './components/search-result/search-result.component';
+import { HomeComponent } from './components/home/home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,16 +20,16 @@ import { OrderModule } from 'ngx-order-pipe';
     QuoteComponent,
     QuoteCardComponent,
     PopQuoteComponent,
-    SearchComponent
+    SearchComponent,
+    SearchResultComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule,
-    Ng2SearchPipeModule,
-    NgxPaginationModule,
-    OrderModule
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

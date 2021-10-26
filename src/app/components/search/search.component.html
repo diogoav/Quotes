@@ -1,4 +1,17 @@
-<div>
-<input class="search"  name="id">
 
-</div>
+
+ <input type="text" id="id"  placeholder="Character name..." 
+  class="form-control" [(ngModel)]="searchTerm" />
+  <button (click)="searchWeb()" class="btn">
+    </button>
+
+    <div class="result" >
+        <a  class="title">
+            <h2 style="color: wheat;">
+               {{data?.title}}
+           ||    {{data?.body}}
+             ||  {{data?.id}}
+            </h2>
+        </a>
+    </div>
+{{data | json}}

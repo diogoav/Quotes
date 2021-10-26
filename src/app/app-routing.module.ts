@@ -1,11 +1,12 @@
+import { HomeComponent } from './components/home/home.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PopQuoteComponent } from './components/pop-quote/pop-quote.component';
-import { SearchComponent } from './components/search/search.component';
+
 
 const routes: Routes = [
-  {path: '', component: SearchComponent },
+  {path: '', component: HomeComponent },
   {path: 'quote', component: QuoteComponent },
   {path: 'quote/popQuote/:id', component: PopQuoteComponent }
 ];
