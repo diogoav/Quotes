@@ -13,6 +13,7 @@ export class QuoteComponent implements OnInit {
 
   ngOnInit() {
     this.getPosts();
+    
   }
 
   getPosts() {

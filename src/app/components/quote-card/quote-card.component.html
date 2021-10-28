@@ -1,5 +1,6 @@
-<div *ngFor="let post of posts | slice:0:5; let last=last" >
-  <div class="separate">
+ <div class="separate">
+<div *ngFor="let post of posts | slice:0:14; let last=last" >
+ 
 <div [routerLink]="['popQuote/'+post.id]" class="quote-tile">
     <i  class="material-icons-outlined">format_quote</i>
     <p class="text-card">{{post.title}}</p>  

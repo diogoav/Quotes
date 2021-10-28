@@ -1,4 +1,6 @@
+import { DataService } from './data.service';
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +8,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'QuotesCard';
+  
 
-  constructor() {}
+  constructor(public router: Router) {}
 
   ngOnInit() {}
 }
