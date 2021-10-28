@@ -1,13 +1,14 @@
 <div class="app-wrapper">
 
-  <img src="" class="bg-img" alt="">
+  <img [src]="bg" class="bg-img" alt="">
 
-  <div class="btn change-bg-btn">
+  <div class="btn change-bg-btn"(click)="changeBg()">
     <span class="material-icons-outlined"> refresh </span>
   </div>
   <div class="top-section">
-    <h1>19:00</h1>
-    <h2>day mounth</h2>
+   
+    <h1>  {{dateTime | date:'HH:mm'}} </h1>
+    <h2>{{dateTime | date: 'd MMMM y'}}</h2>
   </div>
 
   <div class="content-section">
