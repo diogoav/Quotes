@@ -1,60 +1,86 @@
 .quote-wrapper {
-    height: 100%;
-    overflow-y: auto;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .container {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.container-message {
+  // alinha no centro do container(em witgh)
   
-    justify-content: center;
-    
-
-    
+  height: 25vh;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  
+  
+  // align-items: center; // alinha no centro do container(em heigth)
+}
+.container:hover  {
+  opacity: 1;
 }
 
-
-span{
-    
-    
-    color: white;
-    background-color: white;
-    opacity: 0.5;
-    
-}
-.container {
-    max-width: 850px;
-    margin: auto; 
-    
+.quote-message {
+  height: 20vh;
+  width: 50vw;
+  max-width: 500px;
+  border-radius: 7px;
+  background-color: rgba($color: white, $alpha: 0.4);
 }
 
-span{
-    margin: 0;
-    
+.quote-title{
+  height: 6vh;
+  width: 50vw;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  max-width: 500px;
+  background-color: rgba($color: white, $alpha: 0.4);
+  padding-top: 1vh;
 }
 
-.quote-message{
-    background-color: black;
+.quote-title span{
+  transform: scale(0.7);
+  margin-left: 0.3vw;
+  margin-top: 1vh;
+  float: left;
+}
+
+.quote-title  h3 {
+   font-size: 13px;
+   padding-top: 5px;
+   color: rgba($color: rgb(75, 75, 75), $alpha: 1);
    
-    opacity: 0.6;
-    color: white;
-    padding: 25px;
-    white-space: normal;
-    text-align: center;
-    &:hover{
-        opacity: 1;
-    }
-    
 }
 
-.message-title{
-    font-weight: 700;
-    
-    
+.quote-body {
+  
+  font-size: 13px;
+  margin-top: 2vw;
+  color: rgba($color: rgb(31, 30, 30), $alpha: 1);
 }
-.message-content{
-    max-width: 300px;
-    word-break: break-word;
-    border: 1 px solid red;
+
+.quote-body h4 {
+padding: 0% 15%;
+}
+
+@media (min-width: 950px) {
+  
+  .quote-title  h3 {
+      font-size: 15px;
+      padding-top: 6px;
+      overflow-y: hidden;
+  }
 }
 
 

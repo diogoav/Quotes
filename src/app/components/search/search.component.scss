@@ -1,0 +1,128 @@
+.quote-wrapper {
+  height: 40vh;
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.container-search {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.buttonInside {
+  position: relative;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.buttonInside:hover {
+  opacity: 1;
+}
+
+input {
+  background-color: rgba($color: white, $alpha: 0.4);
+  height: 30px;
+  width: 200px;
+  padding-left: 10px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+button {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  border: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 2px;
+  transform: scale(0.9);
+}
+button:hover {
+  cursor: pointer;
+}
+
+//----------------------Message-------------------------
+
+.container {
+    // alinha no centro do container(em witgh)
+    
+    height: 25vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.7;
+    // align-items: center; // alinha no centro do container(em heigth)
+  }
+.container:hover  {
+    opacity: 1;
+}
+  
+.quote-message {
+    height: 20vh;
+    width: 50vw;
+    max-width: 500px;
+    border-radius: 7px;
+    background-color: rgba($color: white, $alpha: 0.4);
+}
+
+.quote-title{
+    height: 6vh;
+    width: 50vw;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    max-width: 500px;
+    background-color: rgba($color: white, $alpha: 0.4);
+}
+
+.quote-title span{
+    transform: scale(0.7);
+    margin-left: 0.3vw;
+    margin-top: 1vh;
+    float: left;
+ }
+
+ .quote-title  h3 {
+     font-size: 13px;
+     padding-top: 5px;
+     color: rgba($color: rgb(75, 75, 75), $alpha: 1);
+     
+ }
+
+.quote-body {
+    
+    font-size: 13px;
+    margin-top: 2vw;
+    color: rgba($color: rgb(31, 30, 30), $alpha: 1);
+}
+
+.quote-body h4 {
+  padding: 0% 15%;
+}
+
+ @media (min-width: 950px) {
+    
+    .quote-title  h3 {
+        font-size: 15px;
+        padding-top: 6px;
+        overflow-y: hidden;
+    }
+}
+
+
+
